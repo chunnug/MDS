@@ -8,19 +8,19 @@ Various data structures are used, primarily hashing and reverse hashing techniqu
 
 The following operations are supported
 
-'Insert(id,price,list)': insert a new item whose description is given in the list
+**Insert(id,price,list):** insert a new item whose description is given in the list
 
-'Find(id)': return price of the item with a given id 
+**Find(id):** return price of the item with a given id 
 
-'Delete(id)': delete item from storage
+**Delete(id):** delete item from storage
 
-'FindMinPrice(n)': given an integer, find items whose description contains that number and return the lowest price of those items
+**FindMinPrice(n):** given an integer, find items whose description contains that number and return the lowest price of those items
 
-'FindMaxPrice(n)': given an integer, find items whose description contains that number and return the highest price of those items.
+**FindMaxPrice(n):** given an integer, find items whose description contains that number and return the highest price of those items.
 
-'FindPriceRange(n,low,high)': given int n, find the number of items whose description contains n and whose price falls between the given range
+**FindPriceRange(n,low,high):** given int n, find the number of items whose description contains n and whose price falls between the given range
 
-'RemoveNames(id, list)': Remove elements of the list from the description of the id
+**RemoveNames(id, list):** Remove elements of the list from the description of the id
 
 ## Optimizations
  * Using a drivers class, originally, a treemap was used for the primary mapping between ID and item, but it was later swapped to a hashmap for a faster runtime of O(1) expected
