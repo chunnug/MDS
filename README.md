@@ -23,7 +23,11 @@ The following operations are supported
 'RemoveNames(id, list)': Remove elements of the list from the description of the id
 
 ## Optimizations
- 
+ * Using a drivers class, originally, a treemap was used for the primary mapping between ID and item, but it was later swapped to a hashmap for a faster runtime of O(1) expected
+
+## Acknowledgment
+* Signatures for previously mentioned methods and extended definitions in comments were done by Sridhar Alagar 
+
 
 
 
